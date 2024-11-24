@@ -1,0 +1,103 @@
+/* Wrapper styles to center the content */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+}
+
+/* Styles for the toggle button */
+.toggle-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Accordion container styles */
+.accordian {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual accordion item styles */
+.item {
+  border-bottom: 1px solid #ddd;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+/* Title styles */
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.title:hover {
+  background-color: #e9ecef;
+  transform: translateX(5px);
+}
+
+.title h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.title span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.title:hover span {
+  color: #007bff;
+}
+
+/* Content styles for the accordion body */
+.content {
+  padding: 15px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #555;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+/* Optional: Add responsiveness */
+@media (max-width: 768px) {
+  .accordian {
+    max-width: 90%;
+  }
+
+  .toggle-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
